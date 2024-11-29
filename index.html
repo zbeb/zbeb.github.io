@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ubuntu Desktop</title>
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coiny&family=Sono:wght@400;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="container">
+    <header>
+      <div class="header-container">
+        <p class="activity">Activities</p>
+        <nav>
+          <a href="1.html">page 1</a>
+          <a href="2.html">page 2</a>
+          <a href="3.html">page 3</a>
+        </nav>
+        <p class="date-time">Nov 11 18:45</p>
+        <div class="utils">
+          <ul>
+            <li>
+              <img
+                src="images/speaker-filled-audio-tool.png"
+                alt="speaker-icon"
+              />
+            </li>
+            <li>
+              <img src="images/full-battery.png" alt="battery-icon" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="desktop">
+      <aside class="sidebar">
+        <!-- SIDEBAR APPS-->
+        <ul class="sidebar-apps">
+          <!-- Firefox -->
+          <li>
+            <label for="toggle1">
+              <img
+                class="firefox-app"
+                src="images/firefox_512.png"
+                alt="firefox"
+              />
+            </label>
+            <div class="open-close"></div>
+          </li>
+
+          <!-- Terminal -->
+          <li>
+            <label for="toggle2">
+              <img
+                class="terminal-app"
+                src="images/terminal-app.png"
+                alt="terminal-app"
+              />
+            </label>
+            <div class="open-close"></div>
+          </li>
+
+          <!-- Home folder -->
+          <li>
+            <label for="toggle3">
+              <img class="folder-app" src="images/folder.png" alt="files-app" />
+            </label>
+            <div class="open-close"></div>
+          </li>
+
+          <!-- Separator -->
+          <li class="line"></li>
+
+          <!-- Trash -->
+          <li>
+            <img
+              class="user-trash"
+              src="images/user-trash.png"
+              alt="trash-app"
+            />
+          </li>
+
+          <li class="last-item">
+            <img class="app-menu" src="images/apps-menu.png" alt="app-menu" />
+          </li>
+        </ul>
+      </aside>
+
+      <main class="content">
+        <div class="background"></div>
+
+        <section class="windows-container window">
+          <!-- FIREFOX APP -->
+          <input type="checkbox" id="toggle1" style="display: none" />
+
+          <article class="firefox-container">
+            <header class="firefox-header">
+              <div class="firefox-header-tab">
+                <div class="tab">
+                  <p>New Tab</p>
+                  <p class="close-tab">x</p>
+                </div>
+                <div class="tab main-tab">
+                  <img src="images/site_logo.png" class="tab-logo" />
+                  <p>Ubuntu</p>
+                  <p class="close-tab">x</p>
+                </div>
+                <div class="plus-tab">+</div>
+                <label for="toggle1" class="close-firefox">✕</label>
+              </div>
+              <div class="firefox-header-search">
+                <div class="nav-buttons">
+                  <p class="nav-button arrow-left">←</p>
+                  <p class="nav-button arrow-right">→</p>
+                  <p class="nav-button refresh">↻</p>
+                </div>
+                <input
+                  type="text"
+                  class="search-bar"
+                  placeholder="https://zbeb.to/pros-and-cons-of-ubuntu"
+                  readonly
+                />
+              </div>
+              <div class="firefox-header-bookmark">
+                <img
+                  src="images/64px-Firefox_logo.png"
+                  alt="firefox-logo"
+                  class="bookmark-img"
+                />
+                <p>Getting Started</p>
+              </div>
+            </header>
+            <div class="firefox-body">
+              <div class="blog-header">
+                <div class="header-left">
+                  <img
+                    src="images/site_logo.png"
+                    alt="site-logo"
+                    class="site-logo-img"
+                  />
+                  <input
+                    type="text"
+                    class="blog-search-bar"
+                    placeholder="⌕ Find related posts..."
+                    readonly
+                  />
+                </div>
+                <div class="header-right">
+                  <button class="login-button">Log in</button>
+                  <button class="create-account-button">Create account</button>
+                </div>
+              </div>
+
+              <div class="blog-container">
+                <div class="blog-body">
+                  <img
+                    src="images/blog_image.png"
+                    alt="ubuntu-logo"
+                    class="blog-ubuntu-img"
+                  />
+
+                  <h2>What is Ubuntu?</h2>
+                  <p>
+                    Ubuntu is a popular, open-source Linux operating system
+                    based on Debian. Known for its ease of use and strong
+                    community support, it’s widely used for desktops, servers,
+                    and cloud environments.
+                  </p>
+
+                  <h3 id="min-req-txt">Minimum Requirements</h3>
+                  <div class="min-req-table-container">
+                    <table class="min-req-table">
+                      <thead>
+                        <tr>
+                          <th class="min-req-component">Component</th>
+                          <th>Requirement</th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                          <td>Processor</td>
+                          <td>2 GHz dual-core processor</td>
+                        </tr>
+                        <tr>
+                          <td>Memory</td>
+                          <td>4 GB RAM</td>
+                        </tr>
+                        <tr>
+                          <td>Storage</td>
+                          <td>25 GB of free disk space</td>
+                        </tr>
+                        <tr>
+                          <td>GPU</td>
+                          <td>256 MB of VRAM</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <h2>Why use Ubuntu?</h2>
+                  <p>
+                    Ubuntu is a free, user-friendly, and secure operating
+                    system. It’s ideal for both beginners and advanced users,
+                    offering regular updates, strong community support, and a
+                    vast selection of software. Its stability, ease of use, and
+                    customization options make it perfect for personal and
+                    professional use.
+                  </p>
+
+                  <div class="pro-con-table-container">
+                    <table class="pro-con-table">
+                      <thead>
+                        <tr>
+                          <th id="pros">Pros</th>
+                          <th id="cons">Cons</th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                          <td>Easy to use with a friendly interface</td>
+                          <td>
+                            Limited software availability compared to
+                            Windows/macOS
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Free and open-source</td>
+                          <td>
+                            Can have compatibility issues with certain hardware
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Regular updates and security patches</td>
+                          <td>Less support for gaming compared to Windows</td>
+                        </tr>
+                        <tr>
+                          <td>Large community and documentation</td>
+                          <td>Some applications are harder to install</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <h2>How to Install Ubuntu</h2>
+                  <p>
+                    Click
+                    <a
+                      href="https://ubuntu.com/download"
+                      target="_blank"
+                      id="download-link"
+                      >here</a
+                    >
+                    to download ubuntu
+                  </p>
+
+                  <h2>Leave us a comment!</h2>
+                  <div class="form-container">
+                    <form>
+                      <label for="name">Name:</label>
+                      <input type="text" id="name" name="name" required />
+                      <label for="email">Email:</label>
+                      <input type="email" id="email" name="email" required />
+                      <label for="message">Message:</label>
+                      <textarea id="message" name="message" required></textarea>
+                      <button type="submit" id="submit">Submit</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- TERMINAL APP -->
+          <article>
+            <input type="checkbox" id="toggle2" style="display: none" />
+
+            <div class="CMD-container window">
+              <!-- CMD HEADER-->
+              <header class="CMD-header">
+                <h1>zbeb@x410dev: ~</h1>
+                <div class="close-terminal-container">
+                  <label for="toggle2" class="close-terminal">x</label>
+                </div>
+              </header>
+              <!-- CMD BODY-->
+              <div class="CMD-body">
+                <p>
+                  Welcome to Ubuntu 20.04.3 LTS (GNU/Linux 5.11.0-38-generic
+                  x86_64)
+                </p>
+                <p>* Documentation: https://help.ubuntu.com</p>
+                <p>* This system is managed by 'zbeb'.</p>
+                <p>Last login: Thu Nov 11 18:45:00 2024</p>
+                <div id="cmd-input">
+                  <span id="cmd-line">
+                    zbeb@x410dev: ~$<br />
+                    zbeb@x410dev: ~$
+
+                    <input type="text" id="cmd-text" placeholder="▌" />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <input type="checkbox" id="toggle3" style="display: none" />
+          <!-- FILES APP -->
+          <article class="folder-container window">
+            <!-- FOLDER HEADER-->
+            <header class="folder-header">
+              <select id="menu-tab">
+                <option value="1">🏠 Home</option>
+                <option value="2">🖥️ Desktop</option>
+                <option value="3">📄 Documents</option>
+                <option value="4">📥 Downloads</option>
+                <option value="5">🎶 Music</option>
+              </select>
+              <!-- Close button -->
+              <label for="toggle3" class="close-folder">x</label>
+            </header>
+            <!-- FOLDER BODY-->
+            <div class="folder-body">
+              <!-- FOLDER LEFT MENU -->
+              <aside class="folder-menu">
+                <ul>
+                  <li><p>Home</p></li>
+                  <li><p>Desktop</p></li>
+                  <li><p>Documents</p></li>
+                  <li><p>Downloads</p></li>
+                </ul>
+              </aside>
+              <!-- FOLDER MAIN ITEMS -->
+              <ul class="folder-items">
+                <li>
+                  <img src="images/folder.png" alt="folder-icon" />
+                  <p>Documents</p>
+                </li>
+                <li>
+                  <img src="images/folder.png" alt="folder-icon" />
+                  <p>Downloads</p>
+                </li>
+                <li>
+                  <img src="images/folder.png" alt="folder-icon" />
+                  <p>Music</p>
+                </li>
+                <li>
+                  <img src="images/folder.png" alt="folder-icon" />
+                  <p>Pictures</p>
+                </li>
+                <li>
+                  <img src="images/folder.png" alt="folder-icon" />
+                  <p>Videos</p>
+                </li>
+                <li>
+                  <img src="images/folder.png" alt="folder-icon" />
+                  <p>.cache</p>
+                </li>
+                <li>
+                  <img src="images/folder.png" alt="folder-icon" />
+                  <p>.config</p>
+                </li>
+                <li>
+                  <img src="images/folder.png" alt="folder-icon" />
+                  <p>.local</p>
+                </li>
+                <li>
+                  <img src="images/folder.png" alt="folder-icon" />
+                  <p>.mozilla</p>
+                </li>
+                <li>
+                  <img src="images/folder.png" alt="folder-icon" />
+                  <p>.gnupg</p>
+                </li>
+                <li>
+                  <img src="images/folder.png" alt="folder-icon" />
+                  <p>.ssh</p>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      <p>By zbeb</p>
+    </footer>
+  </body>
+</html>
